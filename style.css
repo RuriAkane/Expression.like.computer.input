@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Hannari';
+    src: url('Hannari.otf') format('OpenType');
+}
+
+body {
+    position: relative;
+    background-color: #86cecb;
+    color: rgb(78, 169, 174);
+    background: radial-gradient(#2babe6, #124861, #1b0b47);
+    background-attachment: fixed;
+    font-family: 'Hannari';
+}
+
+#text {
+    position: absolute;
+    font-size: 50px;
+    z-index: 2;
+    padding: 1em 0 5em 0;
+}
+
+#info {
+    position: fixed;
+    font-size: 40px;
+    left: 0px;
+    bottom: 0px;
+    margin: 10px;
+    background-color: white;
+    background-size: 100%;
+    padding: 10px;
+    z-index: 3;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(78, 169, 174);
+}
+
+#control {
+    position: fixed;
+    padding: 10px;
+    right: 0px;
+    z-index: 5;
+}
+
+.disabled {
+    display: none;
+}
+
+#text>div {
+    display: inline-block;
+    background-color: white;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#media {
+    position: fixed;
+    margin: 10px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 5;
+}
+
+#circle {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 0px;
+    height: 0px;
+    opacity: 0.7;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0px;
+    border-color: yellow;
+    z-index: 0;
+}
+
+a {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    color: rgb(78, 169, 174);
+    text-decoration: none;
+    font-size: 40px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(78, 169, 174);
+}
